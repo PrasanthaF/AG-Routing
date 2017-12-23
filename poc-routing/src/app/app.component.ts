@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  pageTitle: string = 'Acme Product Management';
+
+  constructor() { }
+
+  logOut(): void {
+
+    console.log('Log out');
+  }
 }
