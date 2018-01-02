@@ -12,8 +12,7 @@
                     <label class="col-md-2 control-label" for="productNameId">Product Name</label>
 
                     <div class="col-md-8">
-                        <input class="form-control" id="productNameId" type="text" placeholder="Name (required)" required minlength="3" [(ngModel)]=p
-                            roduct.productName name="productName" #productNameVar="ngModel" />
+                        <input class="form-control" id="productNameId" type="text" placeholder="Name (required)" required minlength="3" [(ngModel)]=product.productName name="productName" #productNameVar="ngModel" />
                         <span class="help-block" *ngIf="(productNameVar.touched ||
                                                          productNameVar.dirty) &&
                                                          productNameVar.errors">
@@ -33,7 +32,7 @@
                     <label class="col-md-2 control-label" for="productCodeId">Product Code</label>
 
                     <div class="col-md-8">
-                        <input class="form-control" id="productCodeId" type="text" placeholder="Code (required)" required [(ngModel)]=p roduct.productCode
+                        <input class="form-control" id="productCodeId" type="text" placeholder="Code (required)" required [(ngModel)]=product.productCode
                             name="productCode" #productCodeVar="ngModel" />
                         <span class="help-block" *ngIf="(productCodeVar.touched ||
                                                          productCodeVar.dirty) &&
@@ -49,7 +48,7 @@
                     <label class="col-md-2 control-label" for="descriptionId">Description</label>
 
                     <div class="col-md-8">
-                        <textarea class="form-control" id="descriptionId" placeholder="Description" rows=3 [(ngModel)]=p roduct.description name="description"></textarea>
+                        <textarea class="form-control" id="descriptionId" placeholder="Description" rows=3 [(ngModel)]=product.description name="description"></textarea>
                     </div>
                 </div>
 
